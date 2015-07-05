@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US" class="header-waypoint" data-animate-down="header-down" data-animate-up="header-up">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if page.title %}{{ page.title }} · {% endif %}TripMe Apps{% if page.titleAfter %} · {{ page.titleAfter }}{% endif %}</title>
+	<meta name="description" content="{{ page.meta }}">
+	<meta name="keywords" content="{% if page.keywords %}{{page.keywords}},{% endif %} {{site.keywords}}">
+	<meta property="article:author" content="https://www.facebook.com/tripmeapps">
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
+</head>
+<body>
+
+	<header class="header">
+	</header>
+
+	{{ content }}
+
+	<footer class="footer">
+	</footer>
+
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-2.1.4.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/isotope.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery.waypoints.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/parallax.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-55126523-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

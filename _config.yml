@@ -2,9 +2,9 @@
 baseurl: 
 markdown: kramdown
 permalink: pretty
-keywords: tripme, tripme app, tripme lviv, tripme startup
+keywords: tripme, tripme lviv, tripme apps, tripme app, tripme startup
 
-port: 2525
+port: 3333
 
 exclude: ['README.md']
 
@@ -13,4 +13,4 @@ sass:
   style: :expanded
 
 # for og
-# basedomain: http://irukanji-music.github.io
+# basedomain: http://tripme.github.io
