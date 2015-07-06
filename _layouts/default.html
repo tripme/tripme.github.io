@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ page.lang }}">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,29 +15,24 @@
 </head>
 <body>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-
-
-				<nav>
-					<a href="{{ site.baseurl_root }}/">{% t global.en %}</a>
-					<a href="{{ site.baseurl_root }}/ua/">{% t global.ua %}</a>
-					<a href="{{ site.baseurl_root }}/ru/">{% t global.ru %}</a>
+				{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
+				<nav class="lang">
+				{% for post in posts %}
+					<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+				{% endfor %}
 				</nav>
 
-				<h1>{% t index.presentH1 %}</h1>
+				{% assign posts=site.posts | where:"lang", page.lang | where:"type", "pages" %}
+				<nav>
+					{% for post in posts %}
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					{% endfor %}
+				</nav>
 
 				{{ content }}
 
-				<!-- {% include index.html %} -->
-
 				<footer class="footer">
 				</footer>
-
-			</div>
-		</div>
-	</div>
 
 	<script src="{{ site.baseurl_root }}/assets/js/vendor/jquery-2.1.4.min.js"></script>
 	<script src="{{ site.baseurl_root }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>

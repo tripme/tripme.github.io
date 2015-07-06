@@ -1,22 +1,66 @@
-<hr>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6">
 
-<h1>Hello Word!</h1>
-<h2>Hello Word!</h2>
-<h3>Hello Word!</h3>
-<h4>Hello Word!</h4>
-<h5>Hello Word!</h5>
-<h6>Hello Word!</h6>
+			<h1>{{ site.data.l10n.t[page.lang].home.wewillshare }}</h1>
+			{% include golden-links.html %}
 
-<hr>
+		</div>
+	</div>
+</div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe veritatis consequuntur odit, numquam libero dolores distinctio. Optio rerum, perferendis. Aliquid aperiam, corporis velit unde maiores quos commodi ut dolores laborum eos consequuntur hic reprehenderit cum temporibus repudiandae dolorem saepe quam, pariatur eveniet. Maiores in dolorem alias distinctio nisi dicta, ipsum optio quas esse voluptatum. Debitis molestias doloribus, ducimus delectus laboriosam excepturi deleniti, maxime necessitatibus doloremque distinctio, ipsum dolore accusantium ipsam tempora facere ipsa. Commodi ut, tempore. Eius distinctio in, odio sint esse suscipit, error facilis tenetur, dolorem obcaecati animi? Libero pariatur cumque illo labore excepturi omnis, expedita debitis earum blanditiis.</p>
+<nav>
+	<a href="#">{{ site.data.l10n.t[page.lang].home.adventure }}</a>
+	<a href="#">{{ site.data.l10n.t[page.lang].home.stroll }}</a>
+	<a href="#">{{ site.data.l10n.t[page.lang].home.lviv }}</a>
+</nav>
 
-<hr>
+{% assign posts=site.posts | where:"lang", page.lang | where:"type", "posts" %}
+<div class="isotope-container">
+	{% for post in posts %}
+	<article class="isotope-item">
+		<h4>{{ post.title }}</h4>
+	</article>
+	{% endfor %}
+</div>
 
-<div class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit rem temporibus alias nobis est soluta architecto, debitis eligendi qui atque cumque. Suscipit ipsa sequi modi vitae eaque eveniet deserunt nesciunt praesentium, necessitatibus blanditiis recusandae impedit placeat dicta nam nulla officiis!</div>
+{% include golden-links.html %}
 
-<hr>
+<h2>{{ site.data.l10n.t[page.lang].home.citystories }}</h2>
+
+<article>
+	<h6>{{ site.data.l10n.t[page.lang].home.story1title }}</h6>
+	<p>{{ site.data.l10n.t[page.lang].home.story1descr }}</p>
+</article>
+
+<article>
+	<h6>{{ site.data.l10n.t[page.lang].home.story2title }}</h6>
+	<p>{{ site.data.l10n.t[page.lang].home.story2descr }}</p>
+</article>
+
+<article>
+	<h6>{{ site.data.l10n.t[page.lang].home.story3title }}</h6>
+	<p>{{ site.data.l10n.t[page.lang].home.story3descr }}</p>
+</article>
+
+<article>
+	<h6>{{ site.data.l10n.t[page.lang].home.story4title }}</h6>
+	<p>{{ site.data.l10n.t[page.lang].home.story4descr }}</p>
+</article>
 
 
+<h2>{{ site.data.l10n.t[page.lang].home.strollwithin }}</h2>
+
+<div>{{ site.data.l10n.t[page.lang].home.uniqueplaces }}</div>
+<div>{{ site.data.l10n.t[page.lang].home.themedrestaurants }}</div>
+<div>{{ site.data.l10n.t[page.lang].home.themedhotels }}</div>
+<div>{{ site.data.l10n.t[page.lang].home.historicalsights }}</div>
 
 
+<h2>{{ site.data.l10n.t[page.lang].home.manyother }}</h2>
+
+{% include golden-links.html %}
+
+<div>{{ site.data.l10n.t[page.lang].global.needhelp }}</div>
+<div>{{ site.data.l10n.t[page.lang].global.mailus }}</div>
+<div>{{ site.data.l10n.t[page.lang].global.callus }}</div>
