@@ -6,7 +6,8 @@ keywords: 'tripme, tripme lviv, tripme apps, tripme app, tripme startup'
 
 port: 3333
 
-exclude: ['README.md']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
+exclude_from_localizations: ['assets', 'Gemfile', 'Gemfile.lock']
 
 sass:
   sass_dir: assets/css
