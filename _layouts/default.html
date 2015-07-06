@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="header-waypoint" data-animate-down="header-down" data-animate-up="header-up">
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +7,44 @@
 
 	<title>{% if page.title %}{{ page.title }} · {% endif %}TripMe Apps{% if page.titleAfter %} · {{ page.titleAfter }}{% endif %}</title>
 	<meta name="description" content="{{ page.meta }}">
-	<meta name="keywords" content="{% if page.keywords %}{{page.keywords}},{% endif %} {{site.keywords}}">
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %} {{ site.keywords }}">
 	<meta property="article:author" content="https://www.facebook.com/tripmeapps">
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-	<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
+	<link rel="stylesheet" href="{{ site.baseurl_root }}/assets/css/main.css">
+	<link rel="icon" type="image/png" href="{{ site.baseurl_root }}/assets/img/favicons/favicon-32.png">
 </head>
 <body>
 
-	<header class="header">
-	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
 
-	{{ content }}
 
-	<footer class="footer">
-	</footer>
+				<nav>
+					<a href="{{ site.baseurl_root }}/">{% t global.en %}</a>
+					<a href="{{ site.baseurl_root }}/ua/">{% t global.ua %}</a>
+					<a href="{{ site.baseurl_root }}/ru/">{% t global.ru %}</a>
+				</nav>
 
-	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-2.1.4.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/vendor/isotope.pkgd.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/vendor/jquery.waypoints.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/vendor/parallax.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+				<h1>{% t index.presentH1 %}</h1>
+
+				{{ content }}
+
+				<!-- {% include index.html %} -->
+
+				<footer class="footer">
+				</footer>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="{{ site.baseurl_root }}/assets/js/vendor/jquery-2.1.4.min.js"></script>
+	<script src="{{ site.baseurl_root }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="{{ site.baseurl_root }}/assets/js/vendor/isotope.pkgd.min.js"></script>
+	<script src="{{ site.baseurl_root }}/assets/js/vendor/jquery.waypoints.min.js"></script>
+	<script src="{{ site.baseurl_root }}/assets/js/vendor/parallax.min.js"></script>
+	<script src="{{ site.baseurl_root }}/assets/js/main.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
