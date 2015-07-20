@@ -1,8 +1,8 @@
 t:
   en:
     global:
-      appstore: 'Download on<br><span>AppStore</span>'
-      googleplay: 'Download on<br><span>Google Play</span>'
+      appstore: '<span>Download on</span><br>AppStore'
+      googleplay: '<span>Download on</span><br>Google Play'
       freeapp: 'Free App'
       needhelp: 'Need help? Interested in cooperation?<br>Do you want to help us with advise?'
       mailus: 'Feel free to email us at'
@@ -57,8 +57,8 @@ t:
       branding: 'Branding'
   ua:
     global:
-      appstore: 'Завантажити з<br><span>Appstore</span>'
-      googleplay: 'Завантажити з<br><span>Google Play</span>'
+      appstore: '<span>Завантажити з</span><br>Appstore'
+      googleplay: '<span>Завантажити з</span><br>Google Play'
       freeapp: 'Додаток безкоштовний'
       needhelp: 'Потрібна допомога? Хочете співпрацювати?<br>Бажаєте допомогти нам порадою?'
       mailus: 'Не соромтесь, пишіть нам на'
@@ -113,8 +113,8 @@ t:
       branding: 'Фірмовий стиль'
   ru:
     global:
-      appstore: 'Скачать с<br><span>Appstore</span>'
-      googleplay: 'Скачать с<br><span>Google Play</span>'
+      appstore: '<span>Скачать с</span><br>Appstore'
+      googleplay: '<span>Скачать с<br>Google Play'
       freeapp: 'Бесплатное приложение'
       needhelp: 'Нужна помощь? Хотите сотрудничать?<br>Хотите помочь нам советом?'
       mailus: 'Не стесняйтесь, пишите нам на'
