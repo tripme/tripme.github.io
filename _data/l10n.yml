@@ -114,7 +114,7 @@ t:
   ru:
     global:
       appstore: '<span>Скачать с</span><br>Appstore'
-      googleplay: '<span>Скачать с<br>Google Play'
+      googleplay: '<span>Скачать с</span><br>Google Play'
       freeapp: 'Бесплатное приложение'
       needhelp: 'Нужна помощь? Хотите сотрудничать?<br>Хотите помочь нам советом?'
       mailus: 'Не стесняйтесь, пишите нам на'
