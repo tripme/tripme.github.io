@@ -11,29 +11,29 @@
 	<meta property="article:author" content="https://www.facebook.com/tripmeapps">
 
 	<link rel="stylesheet" href="{{ site.baseurl_root }}/assets/css/main.css">
-	<link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-57.png">
+	<link rel="shortcut icon" href="{{ site.baseurl_root }}/assets/img/favicons/favicon-32.png">
+	<link rel="apple-touch-icon" href="{{ site.baseurl_root }}/assets/img/favicons/favicon-57.png">
 </head>
 <body>
 
-				{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
-				<nav class="lang">
-				{% for post in posts %}
-					<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
-				{% endfor %}
-				</nav>
+	{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
+	<nav class="lang">
+	{% for post in posts %}
+		<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+	{% endfor %}
+	</nav>
 
-				{% assign posts=site.posts | where:"lang", page.lang | where:"type", "pages" %}
-				<nav>
-					{% for post in posts %}
-						<a href="{{ post.url }}">{{ post.title }}</a>
-					{% endfor %}
-				</nav>
+	{% assign posts=site.posts | where:"lang", page.lang | where:"type", "pages" %}
+	<nav class="pages">
+		{% for post in posts %}
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		{% endfor %}
+	</nav>
 
-				{{ content }}
+	{{ content }}
 
-				<footer class="footer">
-				</footer>
+	<footer class="footer">
+	</footer>
 
 	<script src="{{ site.baseurl_root }}/assets/js/vendor/jquery-2.1.4.min.js"></script>
 	<script src="{{ site.baseurl_root }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>

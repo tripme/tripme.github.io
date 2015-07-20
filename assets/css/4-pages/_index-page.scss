@@ -8,14 +8,32 @@
 * ----------------------------------------------------------------------------
 */
 nav.lang {
-	.en:lang(en), 
-	.ua:lang(ua), 
-	.ru:lang(ru){
+	a.en:lang(en), 
+	a.ua:lang(ua), 
+	a.ru:lang(ru){
 		font-weight: bold;
+	}
+}
+
+nav.pages {
+	a {
+		font-weight: bold;
+	}
+}
+
+nav.golden-links {
+	a {
+		display: inline-block;
 	}
 }
 
 article.isotope-item {
 	float: left;
 	width: 33.3333333333333333333%;
+	@include min-screen(768px) {width: 100%;}
 }
+// @media (max-width:767px) {
+// 	article.isotope-item {
+// 		width: 100%;
+// 	}
+// }
