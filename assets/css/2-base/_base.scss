@@ -94,10 +94,12 @@ a {
 * ----------------------------------------------------------------------------
 */
 ::selection {
-	background: $selection-color;
+	background: $selection-bg-color;
+	color: $selection-color;
 }
 ::-moz-selection {
-	background: $selection-color;
+	background: $selection-bg-color;
+	color: $selection-color;
 }
 img::selection {
 	background: transparent;
@@ -106,7 +108,7 @@ img::-moz-selection {
 	background: transparent;
 }
 body {
-	-webkit-tap-highlight-color: $selection-color;
+	-webkit-tap-highlight-color: $selection-bg-color;
 }
 
 
@@ -178,6 +180,37 @@ nav.golden-links {
 		font-size: 12.5px;
 		line-height: 1.2;
 		margin: 0;
+	}
+}
+
+nav.main-menu {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	// width: 100%;
+	padding: 35px 0 0 2.5%;
+	text-align: left;
+	@include box-sizing(border-box);
+	a {
+		display: inline-block;
+		svg {
+			float: left;
+			width: 45px;
+			margin-right: 35px;
+		}
+		>span {
+			display: inline-block;
+			text-transform: uppercase;
+			color: #f7c82e;
+			line-height: 45px;
+			color: #7d7d7d;
+			font-size: 15px;
+			font-weight: 700;
+			>span {
+				color: #f7c82e;
+			}
+		}
 	}
 }
 

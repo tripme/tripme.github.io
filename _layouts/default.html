@@ -30,6 +30,13 @@
 		{% endfor %}
 	</nav>
 
+	{% assign posts=site.posts | where:"lang", page.lang | where:"name", "home" %}
+	<nav class="main-menu">
+		{% for post in posts %}
+			<a href="{{ post.url }}">{% include svg/tripme.svg %} <span>TripMe<span>Lviv</span></span></a>
+		{% endfor %}
+	</nav>
+
 	{{ content }}
 
 	<footer class="footer">
