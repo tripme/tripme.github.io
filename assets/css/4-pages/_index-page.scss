@@ -2,47 +2,19 @@
 /* # INDEX PAGE
 /*-------------------------------------------------------------------------*/
 
-
-/**
-* Header
-* ----------------------------------------------------------------------------
-*/
-nav.lang {
-	a.en:lang(en), 
-	a.ua:lang(ua), 
-	a.ru:lang(ru){
-		font-weight: 700;
+.index-page {
+	h1 {
+		margin-top: 150px;
+		margin-bottom: 90px;
 	}
-}
-
-nav.pages {
-	a {
-		font-weight: 700;
-	}
-}
-
-nav.golden-links {
-	a {
-		display: inline-block;
-		text-transform: uppercase;
-		text-align: left;
-		font-weight: 700;
-		font-size: 12.5px;
-		line-height: 1.2;
-		span {
-			color: #c2c2c2;
+	nav.golden-links {
+		a {
+			margin-left: 80px;
+			margin-bottom: 50px;
 		}
-		&:hover {
-			span {
-				color: inherit;
-			}
+		p {
+			margin-bottom: 60px;
 		}
 	}
-}
-
-article.isotope-item {
-	float: left;
-	width: 33.3333333333333333333%;
-	@include media("<=tablet") {width: 100%;}
 }
 
