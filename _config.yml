@@ -8,17 +8,3 @@ sass:
 # seo
 # basedomain: http://tripme.github.io
 keywords: 'tripme, tripme lviv, tripme apps, tripme app, tripme startup'
-
-defaults:
-  - scope:
-      path: _posts/en
-    values:
-      lang: en
-  - scope:
-      path: _posts/ua
-    values:
-      lang: ua
-  - scope:
-      path: _posts/ru
-    values:
-      lang: ru
