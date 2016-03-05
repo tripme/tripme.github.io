@@ -10,26 +10,15 @@ sass:
 keywords: 'tripme, tripme lviv, tripme apps, tripme app, tripme startup'
 
 defaults:
-  -
-    scope:
+  - scope:
       path: _posts/en
     values:
-      layout: default
       lang: en
-  -
-    scope:
+  - scope:
       path: _posts/ua
     values:
-      layout: default
       lang: ua
-  -
-    scope:
+  - scope:
       path: _posts/ru
     values:
-      layout: default
       lang: ru
-
-
-
-
-
