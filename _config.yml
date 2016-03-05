@@ -1,3 +1,14 @@
+baseurl: ''
+exclude: ['README.md', 'CNAME']
+
+sass:
+  sass_dir: assets/css
+  style: :expanded
+
+# seo
+# basedomain: http://tripme.github.io
+keywords: 'tripme, tripme lviv, tripme apps, tripme app, tripme startup'
+
 defaults:
   -
     scope:
@@ -18,25 +29,6 @@ defaults:
       layout: default
       lang: ru
 
-# Build settings
-baseurl: ''
-markdown: kramdown
-permalink: pretty
-keywords: 'tripme, tripme lviv, tripme apps, tripme app, tripme startup'
-
-port: 3333
-
-#languages: ['en', 'ua', 'ru']
-
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
-#exclude_from_localizations: ['assets', 'Gemfile', 'Gemfile.lock']
-
-sass:
-  sass_dir: assets/css
-  style: :expanded
-
-# for og
-# basedomain: http://tripme.github.io
 
 
 
