@@ -1,5 +1,5 @@
 baseurl: ''
-exclude: ['README.md', 'CNAME']
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
 
 sass:
   sass_dir: assets/css

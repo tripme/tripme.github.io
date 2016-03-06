@@ -1,0 +1,21 @@
+.routes__item {
+  float: left;
+  width: 33.333333%;
+  padding-bottom: 33.333333%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.routes__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}

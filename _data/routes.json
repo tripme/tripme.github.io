@@ -4,41 +4,47 @@
             "en": "Hunting for lions",
             "ua": "Полювання на левів",
             "ru": "Охота на львов",
-        }
+        },
+        "image": "lviv-hunting-for-lions.jpg",
     },
     {
         "title": {
             "en": "Criminal Lviv",
             "ua": "Кримінальний Львів",
             "ru": "Криминальный Львов",
-        }
+        },
+        "image": "lviv-crime.jpg",
     },
     {
         "title": {
             "en": "Liberation movement in Lviv",
             "ua": "Визвольний рух у Львові",
             "ru": "Освободительное движение во Львове",
-        }
+        },
+        "image": "lviv-liberation-movement.jpg",
     },
     {
         "title": {
             "en": "Lychakiv cemetery",
             "ua": "Храми Львову",
             "ru": "Храмы Львова",
-        }
+        },
+        "image": "lviv-lychakiv-cemetery.jpg",
     },
     {
         "title": {
             "en": "Cathedrals of Lviv",
             "ua": "Личаківське кладовище",
             "ru": "Лычаковское Кладбище",
-        }
+        },
+        "image": "lviv-churches.jpg",
     },
     {
         "title": {
             "en": "Lviv book forum 2014",
             "ua": "Форум Видавців 2014",
             "ru": "Форум Издателей 2014",
-        }
+        },
+        "image": "lviv-book-forum-2014.jpg",
     },
 ]

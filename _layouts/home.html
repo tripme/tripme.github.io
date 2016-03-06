@@ -22,11 +22,11 @@ layout: default
         <a href="#">{{ site.data.l10n.t[page.lang].home.lviv }}</a>
     </nav>
 
-    <div class="isotope-container">
+    <div class="routes">
         {% for i in site.data.routes %}
-        <article class="isotope-item">
-            <h4>{{ i.title[page.lang] }}</h4>
-        </article>
+        <div class="routes__item" style="background-image: url({{ site.baseurl }}/assets/img/routes/{{ i.image }});">
+            <div class="routes__title">{{ i.title[page.lang] }}</div>
+        </div>
         {% endfor %}
     </div>
 
