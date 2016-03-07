@@ -1,4 +1,6 @@
 .routes {
+    @include clearfix;
+    margin-bottom: 8%;
 
     &__item {
         float: left;

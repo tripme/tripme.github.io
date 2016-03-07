@@ -1,0 +1,57 @@
+.golden-links {
+
+    a {
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        text-align: left;
+        font-weight: 700;
+        font-size: 12.5px;
+        line-height: 1.2;
+        padding-left: 40px;
+
+        svg {
+            width: 39px;
+            position: absolute;
+            left: 0;
+            top: 44%;
+            transform: translateY(-50%);
+
+            path {
+                fill: $linkColor;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+
+        span {
+            color: #c2c2c2;
+        }
+
+        &:hover {
+            svg path {
+                fill: $linkColorHover;
+            }
+
+            span {
+                color: inherit;
+            }
+        }
+    }
+
+    p {
+        color: #c2c2c2;
+        font-size: 12.5px;
+        line-height: 1.2;
+        margin: 0;
+    }
+}
+
+.hero {
+    .golden-links {
+        margin-bottom: 20px;
+        a {
+            margin-left: 40px;
+            margin-bottom: 60px;
+        }
+    }
+}

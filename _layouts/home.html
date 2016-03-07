@@ -2,82 +2,86 @@
 layout: default
 ---
 
-<div class="index-page">
-    <section class="index-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 text-right">
+<div class="hero">
+    <div class="row">
+        <div class="col-6">
 
-                    <h1>{{ site.data.l10n.t[page.lang].home.wewillshare }}</h1>
-                    {% include golden-links.html %}
+            <div class="hero__title">{{ site.data.l10n.t[page.lang].home.wewillshare }}</div>
+            {% include golden-links.html %}
 
-                </div>
+        </div>
+        <div class="col-6">
+
+            <div class="hero__mobiles">
+                <img class="hero__home" src="{{ site.baseurl }}/assets/img/hero/iphone-home.png" alt="TripMe Home">
+                <img class="hero__map" src="{{ site.baseurl }}/assets/img/hero/iphone-map.png" alt="TripMe Map">
             </div>
-        </div>
-    </section>
 
-    <nav>
-        <a href="#">{{ site.data.l10n.t[page.lang].home.adventure }}</a>
-        <a href="#">{{ site.data.l10n.t[page.lang].home.stroll }}</a>
-        <a href="#">{{ site.data.l10n.t[page.lang].home.lviv }}</a>
-    </nav>
-
-    <div class="routes">
-        {% for i in site.data.routes %}
-        <div class="routes__item" style="background-image: url({{ site.baseurl }}/assets/img/routes/{{ i.image }});">
-            <div class="routes__title">{{ i.title[page.lang] }}</div>
         </div>
-        {% endfor %}
     </div>
-
-    {% include golden-links.html %}
-
-    <h2>{{ site.data.l10n.t[page.lang].home.citystories }}</h2>
-
-    <article>
-        <h6>{{ site.data.l10n.t[page.lang].home.story1title }}</h6>
-        <p>{{ site.data.l10n.t[page.lang].home.story1descr }}</p>
-    </article>
-
-    <article>
-        <h6>{{ site.data.l10n.t[page.lang].home.story2title }}</h6>
-        <p>{{ site.data.l10n.t[page.lang].home.story2descr }}</p>
-    </article>
-
-    <article>
-        <h6>{{ site.data.l10n.t[page.lang].home.story3title }}</h6>
-        <p>{{ site.data.l10n.t[page.lang].home.story3descr }}</p>
-    </article>
-
-    <article>
-        <h6>{{ site.data.l10n.t[page.lang].home.story4title }}</h6>
-        <p>{{ site.data.l10n.t[page.lang].home.story4descr }}</p>
-    </article>
-
-    <div class="stories">
-        {% for i in site.data.stories %}
-        <div class="stories__item" style="background-image: url({{ site.baseurl }}/assets/img/stories/{{ i.image }});">
-            <div class="stories__content">
-                <div class="stories__title">{{ i.title[page.lang] }}</div>
-                <div class="stories__description">{{ i.description[page.lang] }}</div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    <h2>{{ site.data.l10n.t[page.lang].home.strollwithin }}</h2>
-
-    <div>{{ site.data.l10n.t[page.lang].home.uniqueplaces }}</div>
-    <div>{{ site.data.l10n.t[page.lang].home.themedrestaurants }}</div>
-    <div>{{ site.data.l10n.t[page.lang].home.themedhotels }}</div>
-    <div>{{ site.data.l10n.t[page.lang].home.historicalsights }}</div>
-
-
-    <h2>{{ site.data.l10n.t[page.lang].home.manyother }}</h2>
-
-    {% include golden-links.html %}
-
-    <div>{{ site.data.l10n.t[page.lang].global.needhelp }}</div>
-    <div>{{ site.data.l10n.t[page.lang].global.mailus }}</div>
-    <div>{{ site.data.l10n.t[page.lang].global.callus }}</div>
 </div>
+
+<nav class="home-menu">
+    <a href="#">{{ site.data.l10n.t[page.lang].home.adventure }}</a>
+    <a href="#">{{ site.data.l10n.t[page.lang].home.stroll }}</a>
+    <a href="#">{{ site.data.l10n.t[page.lang].home.lviv }}</a>
+</nav>
+
+<div class="routes">
+    {% for i in site.data.routes %}
+    <div class="routes__item" style="background-image: url({{ site.baseurl }}/assets/img/routes/{{ i.image }});">
+        <div class="routes__title">{{ i.title[page.lang] }}</div>
+    </div>
+    {% endfor %}
+</div>
+
+{% include golden-links.html %}
+
+<h2>{{ site.data.l10n.t[page.lang].home.citystories }}</h2>
+
+<article>
+    <h6>{{ site.data.l10n.t[page.lang].home.story1title }}</h6>
+    <p>{{ site.data.l10n.t[page.lang].home.story1descr }}</p>
+</article>
+
+<article>
+    <h6>{{ site.data.l10n.t[page.lang].home.story2title }}</h6>
+    <p>{{ site.data.l10n.t[page.lang].home.story2descr }}</p>
+</article>
+
+<article>
+    <h6>{{ site.data.l10n.t[page.lang].home.story3title }}</h6>
+    <p>{{ site.data.l10n.t[page.lang].home.story3descr }}</p>
+</article>
+
+<article>
+    <h6>{{ site.data.l10n.t[page.lang].home.story4title }}</h6>
+    <p>{{ site.data.l10n.t[page.lang].home.story4descr }}</p>
+</article>
+
+<div class="stories">
+    {% for i in site.data.stories %}
+    <div class="stories__item" style="background-image: url({{ site.baseurl }}/assets/img/stories/{{ i.image }});">
+        <div class="stories__content">
+            <div class="stories__title">{{ i.title[page.lang] }}</div>
+            <div class="stories__description">{{ i.description[page.lang] }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<h2>{{ site.data.l10n.t[page.lang].home.strollwithin }}</h2>
+
+<div>{{ site.data.l10n.t[page.lang].home.uniqueplaces }}</div>
+<div>{{ site.data.l10n.t[page.lang].home.themedrestaurants }}</div>
+<div>{{ site.data.l10n.t[page.lang].home.themedhotels }}</div>
+<div>{{ site.data.l10n.t[page.lang].home.historicalsights }}</div>
+
+
+<h2>{{ site.data.l10n.t[page.lang].home.manyother }}</h2>
+
+{% include golden-links.html %}
+
+<div>{{ site.data.l10n.t[page.lang].global.needhelp }}</div>
+<div>{{ site.data.l10n.t[page.lang].global.mailus }}</div>
+<div>{{ site.data.l10n.t[page.lang].global.callus }}</div>
