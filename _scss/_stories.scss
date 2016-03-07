@@ -1,0 +1,62 @@
+@mixin ratio($width, $ratio-width, $ratio-height) {
+    width: $width;
+    padding-bottom: ($ratio-height / $ratio-width) * $width;
+}
+
+.stories {
+    @include clearfix;
+    margin-bottom: 8%;
+
+    &__item {
+        float: left;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+
+        &:nth-child(1) {
+            @include ratio(60%,1560px,500px);
+            margin-bottom: 8%;
+            color: #353535;
+        }
+
+        &:nth-child(2) {
+            @include ratio(40%,1032px,500px);
+            margin-top: 8%;
+            color: #fff;
+        }
+
+        &:nth-child(3) {
+            @include ratio(40%,1032px,900px);
+            margin-top: 8%;
+            color: #fff;
+        }
+
+        &:nth-child(4) {
+            @include ratio(60%,1560px,900px);
+            margin-bottom: 8%;
+            color: #353535;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    &__title {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,54 @@
+[
+    {
+        "title": {
+            "en": "Lviv was a part of eight countries",
+            "ua": "Львів перебував у складі восьми держав",
+            "ru": "Львов находился в составе восьми государств",
+        },
+        "description": {
+            "en": "During the time of its formation Lviv was a part of Kingdom of Galicia–Volhynia, Austria-Hungary, Poland, Russia, under the nazi occupation, West Ukrainian People’s Republic,the Soviet Union and independent Ukraine",
+            "ua": "Протягом свого становлення місто перебувало у складі Галицько-Волинського князівства, Австро-Угорської імперії, Польщі, Росії, під нацистською окупацією, Західноукраїнської Народної Республіки, Радянського Союзу та Незалежної України",
+            "ru": "В период своего становления город находился в составе Галицко-Волынского княжества, Австро-Венгерской империи, Польши, России, под нацистской оккупацией, Западно-Украинской Народной Республики, Советского Союза и независимой Украины",
+        },
+        "image": "lviv-eight-countries.jpg",
+    },
+    {
+        "title": {
+            "en": "The town was named after the king’s son",
+            "ua": "Місто названо ім’ям сина короля",
+            "ru": "Город назван в честь сына короля",
+        },
+        "description": {
+            "en": "The town was established in 1256 by the King Danil of Galicia, who named it after his son Lev",
+            "ua": "Місто було засновано у 1256 році королем Данилом Галицьким, який назвав його в честь свого сина - Лева",
+            "ru": "Город был основан в 1256 году королем Данилом Галицким, который назвал его в честь своего сына - Льва",
+        },
+        "image": "lviv-named.jpg",
+    },
+    {
+        "title": {
+            "en": "Every year more than a hundred of festivals take place in Lviv",
+            "ua": "Щороку у місті відбувається понад 100 фестивалів",
+            "ru": "Каждый год в городе проходит более 100 фестивалей",
+        },
+        "description": {
+            "en": "There are more than 2500 historical and architectural monuments preserved in the city. Since 1998 Lviv is included into UNESCO world heritage",
+            "ua": "Зокрема,у місті збережено 2500 пам’яток історії та архітектури. Окрім того, з 1998 року Львів внесено у світову спадщину ЮНЕСКО",
+            "ru": "В городе сохранено 2500 памяток истории и архитектуры. Кроме того, с 1998 года Львов внесен в число мирового наследия ЮНЕСКО",
+        },
+        "image": "lviv-festivals.jpg",
+    },
+    {
+        "title": {
+            "en": "Lviv has the biggest number of monuments",
+            "ua": "У Львові — найбільша кількість пам’яток",
+            "ru": "Во Львове — самое большое количество памяток",
+        },
+        "description": {
+            "en": "Traditional festivals of Lviv include those of classical music, street theater, coffee, chocolate. Lviv has also been a destination of one of the world greatest jazz festivals for two years.",
+            "ua": "Традиційними для Львова є фестивалі класичної музики, вуличного театру, свята кави, шоколаду, пампуха. Також протягом двох років саме у Львові відбувається один з найбільших у світі джазових фестивалів",
+            "ru": "Традиционными для Львова являются фестивали класической музыки, уличного театра, праздника кофе, шоколада, пампушек. Также, в течение двух лет именно во Львове проходит один из самых грандиозных в мире джазовых фестивалей",
+        },
+        "image": "lviv-monuments.jpg",
+    },
+]

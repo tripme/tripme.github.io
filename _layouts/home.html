@@ -54,6 +54,16 @@ layout: default
         <p>{{ site.data.l10n.t[page.lang].home.story4descr }}</p>
     </article>
 
+    <div class="stories">
+        {% for i in site.data.stories %}
+        <div class="stories__item" style="background-image: url({{ site.baseurl }}/assets/img/stories/{{ i.image }});">
+            <div class="stories__content">
+                <div class="stories__title">{{ i.title[page.lang] }}</div>
+                <div class="stories__description">{{ i.description[page.lang] }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 
     <h2>{{ site.data.l10n.t[page.lang].home.strollwithin }}</h2>
 
