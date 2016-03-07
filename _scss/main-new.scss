@@ -11,6 +11,7 @@ $linkColor: $accentColor;
 $linkColorHover: darken($accentColor,12.5%);
 
 @import 'vendor/coriolan-ui/coriolan-ui';
+@import 'vendor/icomoon';
 
 @import 'sidebar';
 @import 'home-menu';

@@ -8,5 +8,13 @@
         // line-height: 60px;
         display: inline-block;
         padding: 22px 20px;
+
+        [class^="icon-"] {
+            margin-right: 10px;
+            position: relative;
+            top: 6px;
+            font-size: 26px;
+            line-height: 0;
+        }
     }
 }
